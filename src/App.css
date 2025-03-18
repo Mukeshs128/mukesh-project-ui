@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* ------ NAVBAR STARTS --------- */
+.nav-bar {
+  background: url(https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/128/2021/11/17101717/DSC02041-2-1500x400.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: -60px;
+  padding: 2rem 0 10rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar .custome-link {
+  color: #fff;
+}
+.nav-bar .custome-link:hover {
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar .logo {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: x-large;
+}
+/* ------ NAVBAR ENDS --------- */
+
+
+/* ------ SEARCH BAR STARTS --------- */
+.search-bar {
+  position: relative;
+  bottom: 5rem;
+  box-shadow: 0 4px 6px rgba(150, 148, 148, 0.8);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+  transition: transform 0.2s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+/* ------ SEARCH BAR ENDS --------- */
+
+
+/* ------ CARD-GRID STARTS --------- */
+.card img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  transform: translateY(-5px);
 }
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(116, 29, 29, 0.653), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 5px 10px;
+}
+
+
+/* ------ CARD-GRID ENDS --------- */
